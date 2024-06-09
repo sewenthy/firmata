@@ -178,7 +178,7 @@ let pinModeInt (mode:pin_mode) : int =
 let implode (l:char list) : string =
    let res = Bytes.create (List.length l) in
    let rec imp i = function
-      | [] -> res
+      | [] -> String.of_bytes res
       | c :: l -> Bytes.set res i c; imp (i + 1) l in
    imp 0 l
 
