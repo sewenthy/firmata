@@ -1,0 +1,4 @@
+(executable
+ (public_name firmata)
+ (name main)
+ (libraries firmata))

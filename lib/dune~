@@ -1,0 +1,5 @@
+(library
+ (name firmata)
+ (foreign_stubs
+  (language c)
+  (names firmata_stubs serial)))
